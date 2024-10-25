@@ -32,6 +32,7 @@ const StyledImg = styled.img`
    @media (max-width: 768px) {
       width: 90%;
       align-items: center;
+    }
 `;
 
 const TextDiv = styled.div`
@@ -48,7 +49,7 @@ const TextDiv = styled.div`
 export default function Home(){
     return (
         <HomeDiv>
-            <StyledImg src='src/photo4.jpg' alt="Yasmine Jibrell"/>
+            <StyledImg src='src/components/photo4.jpg' alt="Yasmine Jibrell"/>
             <TextDiv>
                 <Title>Home</Title>
                 <p> My name is Yasmine Jibrell and I am a 4th year student at Boston University working towards a BA in Computer Science.

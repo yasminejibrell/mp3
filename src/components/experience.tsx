@@ -22,6 +22,10 @@ const StyledImg = styled.img`
    height: auto; 
    border-radius: 15px; 
    margin-right: 20px;
+   @media (max-width: 768px) {
+      width: 90%;
+      align-items: center;
+    }
 `;
 
 const TextDiv = styled.div`
@@ -32,6 +36,10 @@ const TextDiv = styled.div`
    flex-direction: row;
    justify-content: center;
    align-items: flex-start;
+   @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+   }
 `;
 
 export default function Experience(){
@@ -56,16 +64,14 @@ export default function Experience(){
                             <li>June 2019 - August 2019</li>
                         </ul>
                     <br></br>
-                    <br></br>
                 </ul>
             <Title>Fun Fact</Title>
             <TextDiv>
-                <StyledImg src="src/photo5.jpg" alt="My Trip to the New York Stock Exchange"/>
+                <StyledImg src="src/components/photo5.jpg" alt="My Trip to the New York Stock Exchange"/>
                 <p> Here is a picture of me and one of my fellow interns on our FINRA Intern trip. 
                 During this experience, I had the pleasure of touring the floor of the New York Stock Exchange (NYSE), as well as FINRA's Manhattan office.
                 Overall it was an amazing trip and I am forever thankful for the experience!</p>
             </TextDiv>
     </ExperienceDiv>
     )
-    
 }
